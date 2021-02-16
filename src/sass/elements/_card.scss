@@ -1,0 +1,506 @@
+// Basic
+    // Card with Header
+    // Card without Header
+    // Card with Image
+    // Horizontal Card with Image
+
+// Natours
+    // Feature Card
+    // Rotating Card
+    // Testimonial Card
+    // Solid Gradient Card
+
+
+/* ================================================================================
+   CARD WITH HEADER
+================================================================================ */
+
+/* HTML ===========================================================================
+
+    <div className="card">
+        <div className="card-header">
+            Header
+        </div>
+        <div className="card-body">
+            <h4 className="card-title">Card Title</h4>
+            <p className="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+    </div> 
+
+================================================================================ */
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 4px;
+    margin-bottom: 2rem;
+}
+
+.card-border-shade {
+    border-color: #2c3e50;
+}
+
+.card-header {
+    padding: 12px 20px;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 20px;
+}
+
+.card-title {
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.card-text {
+    margin-bottom: 0;
+}
+
+
+/* ================================================================================
+   CARD WITHOUT HEADER
+================================================================================ */
+
+/* HTML ===========================================================================
+
+    <div className="card">
+        <div className="card-body" >
+            <h4 className="card-title">Card Title</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit?</p>
+            <a href="" className="card-link">Read More</a>
+            <a href="" className="card-link">Subscribe</a>
+        </div>
+    </div>
+
+================================================================================ */
+
+.card-link {
+    color: #18bc9c;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.card-link + .card-link {
+    margin-left: 2rem;
+}
+
+.card-link:hover {
+    color: #0f7864;
+}
+
+
+/* ================================================================================
+   CARD WITH IMAGE
+================================================================================ */
+
+/* HTML ===========================================================================
+
+    <div class="card">
+        <div className="card-image" style={{backgroundImage: `url(${pink})`}}></div>
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p>Some quick example text</p>
+            <a href="#" class="btn">Go somewhere</a>
+        </div>
+    </div>
+
+================================================================================ */
+
+.card-image {
+    width: 100%;
+    height: 17rem;
+    background-size: cover;
+    background-position: top;
+}
+
+
+/* ================================================================================
+   HORIZONTAL CARD WITH IMAGE
+================================================================================ */
+
+/* HTML ===========================================================================
+
+    <div className="card card-horizontal">
+        <div className="card-image" style={{ backgroundImage: `url(${book})` }}></div>
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p>Some quick example text.</p>
+            <a href="#" class="btn">Go somewhere</a>
+        </div>
+    </div>
+
+================================================================================ */
+
+.card-horizontal {
+    flex-direction: row;
+    height: 23rem;
+}
+
+.card-horizontal .card-image {
+    height: 100%;
+    width: 40rem;
+    background-position: right;
+}
+
+
+
+/* ================================================================================
+   Feature Card
+================================================================================ */
+
+/* HTML ===========================================================================
+
+    <div class="card_natours">
+        <i class="fas fa-globe card-icon_natours"></i>
+        <h3 class="card-title_natours">Explore the world</h3>
+        <p class="card-text_natours">Lorem ipsum dolor sit amet.</p>
+    </div>
+
+================================================================================ */
+
+.card_natours {
+    background-color: rgba(255, 255, 255, 0.801);
+    font-size: 1.6rem;
+    padding: 4rem 2.5rem ;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .15);
+    transition: all .3s;
+}
+
+.card_natours:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+}
+
+.card-icon_natours {
+    font-size: 6rem;
+    color: gray;
+    margin-bottom: 3rem;
+    color: transparent;
+    background-clip: text;
+    display: inline-block;
+    background-image: linear-gradient(to right bottom, rgba(255, 222, 113, 0.7), rgba(243, 197, 45, 0.89));
+}
+
+.card-title_natours {
+    text-transform: uppercase;
+    color: dimgray;
+    font-weight: 700;
+}
+
+
+
+/* ================================================================================
+   Rotating Card
+================================================================================ */
+
+/* HTML ===========================================================================
+
+    <div class="card-rotating_natours">
+        
+        // Card Front
+        <div class="card-rotating-side_natours side-front_natours">
+            <div class="card-rotating-image_natours image-2_natours"></div>
+            <h4 class="card-rotating-heading_natours">
+                <span class="card-rotating-heading-span_natours span-2_natours">
+                    The Forest Hiker
+                </span>
+            </h4>
+            <div class="card-rotating-details_natours">
+                <ul>
+                    <li>3 day tours</li>
+                    <li>Up to 30 people</li>
+                    <li>2 tour guides</li>
+                    <li>Sleep in cozy hotels</li>
+                    <li>Difficulty: easy</li>
+                </ul>
+            </div>
+        </div>
+
+        // Card Back
+        <div class="card-rotating-side_natours side-back_natours back-2_natours">
+            <div class="card-rotating-cta_natours">
+                <div class="card-rotating-pricebox_natours">
+                    <p class="card-rotating-price-only_natours">Only</p>
+                    <p class="card-rotating-price-value_natours">$29</p>
+                </div>
+                <a href="#" class="btn_natours btn-white_natours">Book now!</a>
+            </div>
+        </div>
+    </div>
+
+================================================================================ */
+
+.card-rotating_natours {
+    perspective: 150rem;    
+    position: relative;
+    height: 51rem;
+    width: 33rem;
+}
+
+// Card Sides
+.card-rotating-side_natours {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all .8s ease;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .15)
+}
+
+.side-front_natours {
+    background-color: white;
+}
+
+.side-back_natours {
+    transform: rotateY(180deg)
+}
+
+
+// Rotate card front
+.card-rotating_natours:hover .side-front_natours {
+    transform: rotateY(-180deg);
+}
+
+// Rotate card back
+.card-rotating_natours:hover .side-back_natours {
+    transform: rotateY(0);
+}
+
+
+// Front side
+.card-rotating-image_natours {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); 
+}
+
+
+    // Card images
+    .card-rotating-side_natours .image-1_natours {
+        background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url('../../img/natours/nat-5.jpg');
+    }
+
+    .card-rotating-side_natours .image-2_natours {
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url('../../img/natours/nat-6.jpg');
+    }
+
+    .card-rotating-side_natours .image-3_natours {
+        background-image: linear-gradient(to right bottom, #2998ff, #5442fa), url('../../img/natours/nat-7.jpg');
+    }
+
+
+    // Card heading
+    .card-rotating-heading_natours {
+        position: absolute;
+        top: 12rem;
+        right: 2rem; 
+        text-align: right;
+        font-size: 2.8rem;
+        font-weight: 300; 
+        text-transform: uppercase;
+        color: white;
+        width: 75%;
+    }
+
+    .card-rotating-heading-span_natours {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+    }
+
+    .card-rotating-heading_natours .span-1_natours {
+        background-image: linear-gradient(to right bottom, rgba(255, 185, 0, .85), rgba(255, 119, 48, .85))
+    }
+
+    .card-rotating-heading_natours .span-2_natours {
+        background-image: linear-gradient(to right bottom, rgba(126, 213, 111, .85), rgba(40, 180, 133, .85))
+    }
+    
+    .card-rotating-heading_natours .span-3_natours {
+        background-image: linear-gradient(to right bottom, rgba(41, 152, 255, .85), rgba(84, 66, 250, 0.85))
+    }
+
+    // Card details
+    .card-rotating-details_natours {
+        padding: 3rem;
+    }
+
+    .card-rotating-details_natours ul {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .card-rotating-details_natours ul li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+        color: dimgrey;
+        font-weight: 600;
+    }
+
+    .card-rotating-details_natours ul li:not(:last-child) {
+        border-bottom: 1px solid #eee; 
+    }
+
+
+// Back side
+.back-1_natours {
+    background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+}
+
+.back-2_natours {
+    background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+}
+
+.back-3_natours {
+    background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+}
+
+    // Call to action
+    .card-rotating-cta_natours {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 90%;
+    }
+
+    // Price box
+    .card-rotating-pricebox_natours  {
+        color: white;
+        margin-bottom: 8rem;
+    }
+
+    .card-rotating-price-only_natours  {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    .card-rotating-price-value_natours  {
+        font-size: 6rem;
+        font-weight: 100;
+    }
+
+
+/* ================================================================================
+   Testimonial Card
+================================================================================ */
+
+/* HTML ===========================================================================
+
+    <div class="card-testimonial_natours">
+            <figure class="card-testimonial-shape_natours">
+            <img class="card-testimonial-img_natours" src="" alt=""/>
+            <figcaption class="card-testimonial-caption_natours">
+                Mary Smith 
+            </figcaption>
+            </figure>
+            <div class="card-testimonial-text_natours">
+                <h3 class="card-testimonial-heading_natours">Best Week of my Life</h3>
+                <p>Lorem Ipsum</p>
+            </div>
+    </div>
+
+================================================================================ */
+
+.card-testimonial_natours {
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, .1);
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 6rem;
+    padding-left: 9rem;
+    font-size: 1.6rem;
+    transform: skewX(-12deg);
+}
+ 
+// Circle shape
+.card-testimonial-shape_natours {
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    shape-outside: circle(50% at 50% 50% );
+    clip-path: circle(50% at 50% 50% );
+    transform: translate(-3rem) skewX(12deg);
+    backface-visibility: hidden;
+}
+
+// Image in circle
+.card-testimonial-img_natours {
+    height: 100%;
+    transform: translateX(-4rem) scale(1.4); 
+    transition: all .5s;
+}
+
+// Image caption
+.card-testimonial-caption_natours {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all .5s;
+    backface-visibility: hidden ;
+}
+
+// Testimonial text 
+.card-testimonial-text_natours {
+    transform: skewX(12deg);
+}
+
+// Testimonial heading
+.card-testimonial-heading_natours {
+    font-weight: 600;
+    color: slategray;
+    text-transform: uppercase;
+}
+
+// Hover image animation
+.card-testimonial_natours:hover .card-testimonial-img_natours {
+    transform: translateX(-4rem) scale(1); 
+    filter: blur(3px) brightness(80%);
+}
+
+// Hover caption animation
+.card-testimonial_natours:hover .card-testimonial-caption_natours {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+
+/* ===================================
+   Solid Gradient Card
+==================================== */
+
+.solid-gradient_natours {
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 60%, indigo 60%, ), url('../../img/natours/pineapple-on-beach.png');
+    background-size: cover;
+    background-position: center;
+    height: 30rem;
+}

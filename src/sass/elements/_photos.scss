@@ -1,0 +1,64 @@
+// Natours
+    // Photo Composition
+
+    
+/* ================================================================================
+   Photo Composition
+================================================================================ */
+
+/* HTML ===========================================================================
+
+    <div class="composition_natours">
+        <img src="" alt="" class="composition-photo_natours photo-1_natours"/>
+        <img src="" alt="" class="composition-photo_natours photo-2_natours"/>
+        <img src="" alt="" class="composition-photo_natours photo-3_natours"/>
+    </div>
+
+================================================================================ */
+
+.composition_natours {
+    position: relative;
+    height: 400px;
+}
+
+// When hovering composition, select all images that are not hovered
+.composition_natours:hover .composition-photo_natours:not(:hover) {
+    transform: scale(.95);
+}
+
+.composition-photo_natours {
+    position: absolute;
+    width: 55%;
+    display: block;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    margin-bottom: 1rem;
+    transition: all 0.2s;
+    outline-offset: 2rem;
+}
+
+// Zoom in hovered image and apply outline
+.composition-photo_natours:hover {
+    outline: 1.5rem solid #ffde71;
+    transform: scale(1.05) translateY(-.5rem);
+    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+    z-index: 20;
+}
+
+.photo-1_natours {
+    left: 0;
+    top: -2rem;
+    z-index: 10;
+}
+
+.photo-2_natours {
+    right: 0;
+    top: 2rem;
+    z-index: 10;
+}
+
+.photo-3_natours {
+    left: 20%;
+    top: 10rem;
+    z-index: 10;
+}

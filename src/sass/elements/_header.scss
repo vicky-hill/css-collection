@@ -1,0 +1,114 @@
+// Natours
+    // Gradient Header
+
+
+/* ================================================================================
+   Gradient Header
+================================================================================ */
+
+/* HTML ===========================================================================
+
+    <header class="header_natours">
+        <div class="header-logo_natours">
+            <img src="img/logo-white.png" alt="Logo" class="logo_natours" />
+        </div>
+
+        <div class="text-box_natours">
+            <h1 class="heading-primary_natours">
+                <span class="heading-primary-main_natours">Outdoor</span>
+                <span class="heading-primary-sub_natours">is where life happens</span>
+            </h1>
+        </div>
+    </header>
+
+================================================================================ */
+
+.natours {
+    .header_natours {
+        position: relative;
+        height: 95vh;
+        background-image: linear-gradient(to right bottom, 
+            rgba(255, 222, 113, 0.7), rgba(248, 202, 52, 0.7)), 
+            // rgba(126, 213, 111, 0.801), rgba(40, 180, 133, 0.801)), 
+            // url(../../components/elements/natours/img/hero.jpg);
+            url(../../img/natours/pineapple-on-beach.png);
+        background-size: cover;
+        background-position: center;
+        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    }
+    
+    .header-logo_natours  {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+    
+    .logo_natours {
+        height: 3.5rem;
+    }
+    
+    .text-box_natours {
+         position: absolute;
+         top: 40%;
+         left: 50%;  
+         transform: translate(-50%, -50%);
+         text-align: center; 
+    }
+    
+    .heading-primary_natours {
+        color: #fff;
+        text-transform: uppercase;
+        backface-visibility: hidden;
+        margin-bottom: 6rem;
+    }
+    
+    .heading-primary-main_natours {
+        display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+        animation: moveInLeft 1s ease-out;
+    }
+    
+    .heading-primary-sub_natours {
+        display: block;  
+        font-size: 2rem;
+        letter-spacing: 1.75rem;
+        animation: moveInRight 1s ease-out;
+    }
+    
+    // Animation for headlines
+    @keyframes moveInLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-10rem);
+        }
+    
+        80% {
+            transform: translate(1rem);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+    
+    
+    @keyframes moveInRight {
+        0% {
+            opacity: 0;
+            transform: translateX(10rem);
+        }
+    
+        80% {
+            transform: translate(-1rem);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+}
+

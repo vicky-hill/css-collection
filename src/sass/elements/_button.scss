@@ -1,0 +1,288 @@
+// Basic Button
+    // Color Adjustment
+    // Outline Button
+    // Round Button
+
+// Proshop Button
+
+// Natours Button
+
+
+
+
+/* ===================================
+   Basic Button
+==================================== */
+
+/* ===================================
+   <button class="btn">
+        Basic Button
+    </button>
+==================================== */
+
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    font-family: Lato;
+    color: white;
+    margin: 4px 1px;
+    font-size: 1.6rem;
+    padding: 6px 17px;
+    border-radius: 4px;
+    display: inline-block;
+    text-align: center;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 1px solid transparent;
+    letter-spacing: 1.2;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn:focus, .btn:active {
+    box-shadow:  0 0 0 3px rgba(0, 123, 255, 0.25);
+    background-color: rgb(2, 102, 217);
+    outline: none;
+}
+
+.btn:hover {
+    background-color: #0268d9;
+}
+
+.btn:disabled {
+    background-color: #007bff;
+    filter: opacity(70%);
+    cursor: auto;
+}
+
+
+    // Color adjustments
+
+    /* ============================================
+        <button class="btn btn-shade">
+            Secondary Button
+        </button>
+    ============================================= */
+
+    .btn-shade {
+        background-color: #ED7FC4;
+    }
+
+    .btn-shade:focus {
+        box-shadow:  0 0 0 .3rem rgba(233, 141, 199, 0.25);
+        background-color: #ED7FC4;
+    }
+
+    .btn-shade:hover {
+        background-color: #df70b6;
+    }
+
+    .btn-shade:disabled {
+        background-color: rgb(233, 141, 199);
+        filter: opacity(70%);
+        cursor: auto;
+    }
+
+
+    // Outline Button
+
+    /* ============================================
+        <button class="btn btn-outline-shade">
+            Secondary Button
+        </button>
+    ============================================= */
+
+    .btn-outline-shade {
+        background-color: transparent;
+        color: #ED7FC4;
+        border: 1px solid #ED7FC4;
+    }
+
+    .btn-outline-shade:focus {
+        box-shadow:  0 0 0 .3rem rgba(233, 141, 199, 0.25);
+        background-color: #ED7FC4;
+        color: #fff;
+    }
+
+    .btn-outline-shade:hover {
+        background-color:  #ED7FC4;
+        color: #fff;
+    }
+
+    .btn-outline-shade:disabled {
+        background-color: #ED7FC4;
+        filter: opacity(70%);
+        cursor: auto;
+        color: #fff;
+    }
+
+    // Round Button 
+    .btn-round {
+        border-radius: 2.8rem;
+    }
+
+
+
+
+/* ===================================
+   Proshop Button
+==================================== */
+
+/* ===================================
+   <button class="btn btn-secondary">
+        Secondary Button
+    </button>
+==================================== */
+
+.btn_proshop {
+    background-color: #1a1a1a;
+    font-family: 'Nunito Sans';
+    text-transform: uppercase;
+    color: white;
+    margin: 4px 1px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 7px 17px;
+    border-radius: 0px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 1px solid transparent;
+    letter-spacing: 1.2;
+}
+
+.btn_proshop:focus {
+    box-shadow:  0 0 0 .3rem rgba(26, 26, 26, 0.25);
+    background-color:  #1a1a1a;
+    outline: none;
+}
+
+.btn_prhoshop:hover {
+    background-color: #1a1a1a;
+}
+
+.btn_proshop:disabled {
+    background-color: #1a1a1a;
+    filter: opacity(70%);
+    cursor: auto;
+}
+
+
+/* ===================================
+   Awesome Button
+==================================== */
+
+.btn_awesome {
+    padding: 1rem 2.1rem;
+    background-color:  #fff;
+    border: 2px solid #fafafa;
+    font-size: 1.5rem;
+    color: #C96EDC;
+    line-height: 1;
+    border-radius: 25px;
+    outline:none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: Poppins;
+}
+
+.btn_awesome:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+
+/* ================================================================================
+   Natours Button
+================================================================================ */
+
+/* HTML ===========================================================================
+
+    <a href="" class="btn_natours btn-white_natours btn-animated_natours">
+        Natours button
+    </a>
+
+================================================================================ */
+
+// Base btn
+.btn_natours:link,
+.btn_natours:visited {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+}
+
+.btn_natours:hover {
+    transform: translateY(-3px);  
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, .2)
+}
+
+.btn_natours:active {
+    transform: translateY(-1px); 
+    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .2)
+}
+
+// Color btn
+.btn-white_natours {
+    background-color: #fff;
+    color: #777;
+}
+
+.btn-white_natours::after {
+    background-color: #fff;
+}
+
+.btn-purple_natours {
+    background-color: mediumpurple;
+    color: #fff;
+}
+
+.btn-purple_natours::after {
+    background-color: mediumpurple;
+}
+
+// Hover ::after effect
+.btn_natours::after {
+    content: ''; 
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 100px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+
+// When hovering the button, the ::after element will change
+.btn_natours:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+// btn animation
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.btn-animated_natours {
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}

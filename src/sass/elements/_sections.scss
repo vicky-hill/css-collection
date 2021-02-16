@@ -1,0 +1,33 @@
+// Natours
+    // Gradient Section
+
+/* ================================================================================
+   Gradient Section
+================================================================================ */
+
+/* HTML ===========================================================================
+
+    <section class="section-gradient_natours">
+        <div class="row"></div>
+    </section>
+
+================================================================================ */
+
+.section-gradient_natours {
+    padding: 20rem 10rem;
+    background-image: linear-gradient(to right bottom, 
+    rgba(255, 222, 113, 0.7), rgba(248, 202, 52, 0.7)), 
+    url(../../img/natours/pineapple-on-rock.png);
+    background-size: cover;
+    background-position: bottom;
+    width: 98%;
+    margin: 0 auto;
+    margin-top: -1rem;
+    transform: skewY(-3deg)
+}
+
+// Select all direct child of section
+.section-gradient_natours > * {
+    transform: skewY(3deg);
+}
+
